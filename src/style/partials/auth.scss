@@ -1,0 +1,46 @@
+.auth-form{
+	display: inline-block;
+	padding: 50px;
+	border: 1px solid $black;
+}
+
+.auth-input-place{
+	margin: 5px 0;
+}
+
+.auth-input{
+	padding: 10px;
+	width: 250px;
+	font-size: 16px;
+	border: 1px solid $grey;
+}
+
+.auth-input:focus{
+	border: 1px solid $black;
+}
+
+.auth-input-invalid, .auth-input-invalid:focus{
+	border: 1px solid $red;
+}
+
+.auth-valid{
+	color: $red;
+	font-size: 15px;
+	margin: 10px 0;
+	height: 25px;
+	text-align: left;
+}
+
+.auth-button{
+	padding: 10px;
+	width: 274px;
+	background: $white;
+	border: 1px solid $black;
+	cursor: pointer;
+	font-weight: $bold;
+}
+
+.auth-button:hover{
+	background: $black;
+	color: $white;
+}

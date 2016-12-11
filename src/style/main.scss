@@ -1,0 +1,12 @@
+$black: #111;
+$white: #eee;
+$grey: #ccc;
+$red: #f44;
+$bold: 700;
+$font: 'Catamaran', sans-serif;
+$speed: .5s;
+
+@import 'partials/base';
+@import 'partials/auth';
+@import 'partials/logged';
+@import 'partials/slider';

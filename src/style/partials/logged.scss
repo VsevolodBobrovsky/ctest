@@ -1,0 +1,24 @@
+.logged-header{
+	margin: 15px 0 0;
+}
+
+.logged-name{
+	font-weight: $bold;
+}
+
+.logged-main{
+	margin: 15px 0;
+}
+
+.logged-footer{
+	margin: 0 0 15px;
+	text-align: right;
+}
+
+.logged-logout{
+	@extend .auth-button;
+}
+
+.logged-logout:hover{
+	@extend .auth-button:hover;
+}
