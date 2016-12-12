@@ -3,15 +3,12 @@ var valid = document.getElementById('valid');
 var login = document.getElementById('login');
 var pass = document.getElementById('pass');
 var loginMask = /^[A-Za-z0-9_]{0,20}$/;
+var userData = {};
 
 auth.onsubmit = function(){
 	event.preventDefault();
-	validation();
-}
-
-function validation(){
 	if (login.value === ''){
-		valid.textContent = 'All the fields should be fulfilled.';
+		valid.textContent = 'All the fields should be filled.';
 		login.classList.add('auth-input-invalid');
 		login.focus();
 	}
@@ -32,10 +29,11 @@ function validation(){
 		pass.classList.add('auth-input-invalid');
 		pass.focus();
 	}
-	else{		
+	else{
 		login.classList.remove('auth-input-invalid');
 		pass.classList.remove('auth-input-invalid');
-		username.textContent = login.value + ',';
+		userData.login = login.value;
+		username.textContent = userData.login + ',';
 		login.value = pass.value = valid.textContent = '';
 		auth.classList.remove('inner-visible');
 		logged.classList.add('inner-visible');
