@@ -1,2 +1,2 @@
 # ctest
-Ciklum test assignment.
+Test assignment.
